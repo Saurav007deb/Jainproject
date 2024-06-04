@@ -20,8 +20,13 @@ app.use(express.json())
 const _dirname = path.dirname("")
 const buildpath = path.join(_dirname,"../build")
 app.use(express.static(buildpath));
+
 app.use('/api', require ("./routes/createuser"));
-app.use('/api', require ("./routes/displaydata"));
+
+
+
+  app.use('/api', require ("./routes/displaydata"));
+
 app.use('/api', require ("./routes/orderdata"));
 app.get('/', (req, res) => {
   res.send('Hello World!')
