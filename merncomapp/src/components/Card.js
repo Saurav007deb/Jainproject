@@ -1,5 +1,5 @@
 import React from 'react'
-import {useDispatchCard} from './Contextreducer'
+import {useDispatchCard} from './Contextreducer.js'
 
 
 
@@ -10,8 +10,13 @@ export default function Card(props) {
 let all = props.alldetails
 
 const handlevolunteer = async () => {
-    window.alert("Project Added to Action, Please visit My Action page");
-await dispatch ({type: "ADD",name: all.name, description : all.description})
+    
+    
+
+        window.alert("Project Added to Action, Please visit My Action page");
+        await dispatch ({type: "ADD",name: all.name, description : all.description})
+   
+    
 
 }
     return (
