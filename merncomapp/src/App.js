@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './App.css';
-import Main from './screens/Main';
+import Main from './screens/Main.js';
 
 import {
   BrowserRouter as Router,
@@ -10,10 +10,10 @@ import {
   Route,
   
 } from "react-router-dom";
-import Logging from './screens/Logging';
-import Signup from './screens/Signup';
-import { Cardprovider } from './components/Contextreducer';
-import Myparticipation from './screens/Myparticipation';
+import Logging from './screens/Logging.js';
+import Signup from './screens/Signup.js';
+import { Cardprovider } from './components/Contextreducer.js';
+import Myparticipation from './screens/Myparticipation.js';
 
 function App() {
   return (

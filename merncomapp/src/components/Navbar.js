@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { useCard } from '../components/Contextreducer';
-import Badge from 'react-bootstrap/Badge'
-import Actions from '../screens/Actions';
-import Modal from '../screens/Modal';
+//import { useCard } from '../components/Contextreducer.js';
+//import Badge from 'react-bootstrap/Badge'  <Badge pill bg="danger"> {data.length} </Badge>
+import Actions from '../screens/Actions.js';
+import Modal from '../screens/Modal.js';
 export default function Navbar() {
 
-  let data = useCard();
+  //let data = useCard();
 
   const [action,setaction] = useState(false)
   const navigate = useNavigate();
@@ -52,7 +52,7 @@ export default function Navbar() {
              <div className="btn bg-white text-Success mx-1" onClick={()=>{setaction(true)}} > 
 
                 My Action
-                <Badge pill bg="danger"> {data.length} </Badge>
+              
             </div>
            {action? <Modal onClose={()=>setaction(false)}>{<Actions/>}</Modal>:null}
             <div className="btn bg-white text-danger mx-1" onClick={handleLogout} > 

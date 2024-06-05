@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCard, useDispatchCard } from '../components/Contextreducer';
+import { useCard, useDispatchCard } from '../components/Contextreducer.js';
 
 export default function Actions() {
     let data = useCard();
